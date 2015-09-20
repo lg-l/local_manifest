@@ -1,8 +1,8 @@
 TeamHackLG Project
 ========================
-Local manifests to build Android 4.4 for L-project devices (LG-E610,LGE-P700,LG-E400)
+Local manifests to build Android 5.1.1 for L-project device (LG-E610)
 
 To sync:
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/TeamHackLG/local_manifest/cm-11.0/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.githubusercontent.com/aidasaidas75/local_manifest/cm-12.1/local_manifest.xml
     repo sync
