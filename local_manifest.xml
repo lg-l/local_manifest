@@ -4,11 +4,6 @@
     <remove-project name="CyanogenMod/android_bionic" />
     <remove-project name="CyanogenMod/android_frameworks_av" />
     
-<!-- display-caf -->
-   <project name="msm7x27a/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x27a" revision="cm-12.1-caf-msm7x27a" />
-<!-- media-caf -->
-   <project name="msm7x27a/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x27a" revision="cm-12.1-caf-msm7x27a" />
-    
     <project path="build" name="aidasaidas75/android_build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
     </project>
@@ -16,7 +11,11 @@
     <project path="frameworks/av" name="aidasaidas75/android_frameworks_av" groups="pdk" />
     <project path="device/lge/msm7x27a-common" name="aidasaidas75/android_device_lge_msm7x27a-common" revision="cm-12.1" remote="github"/>
     <project path="device/lge/e610" name="aidasaidas75/android_device_lge_e610" revision="cm-12.1" remote="github"/>
-    <project path="kernel/lge/msm7x27a-common" name="aidasaidas75/lge-kernel-lproj" revision="cm-12.1" remote="github"/>
-    <project path="vendor/lge" name="aidasaidas75/proprietary_vendor_lge" revision="cm-12.1" remote="github"/>
+    <project path="kernel/lge/msm7x27a-common" name="aidasaidas75/lge-kernel-lproj" revision="cm-12.1-new" remote="github"/>
+    <project path="vendor/lge" name="aidasaidas75/proprietary_vendor_lge" revision="cm-12.1-new" remote="github"/>
+    
+<!-- QCOM Hardware -->
+    <project path="hardware/qcom/display-caf/msm7x27a" name="SlimLP-Y300/android_hardware_qcom_display-caf" remote="github" revision="lp5.1" />
+    <project path="hardware/qcom/media-caf/msm7x27a" name="SlimLP-Y300/hardware_qcom_media" remote="github" revision="lp5.1" />
  
 </manifest>
